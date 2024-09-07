@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Shayar gym - The best fitness gym in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Mr.Shayar gym</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="data:image/png;base64,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" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">The best fitness Gym in the town is here</h1>
+                        <p class=" text-center">Mr. Shayar Gym: A Fusion of Fitness and Flair
+
+                            Welcome to Mr. Shayar Gym, where the art of fitness meets the elegance of poetry! Our unique gym concept blends rigorous workout routines with an atmosphere that celebrates the beauty of self-expression and creativity..</p>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXQbC1CfP4nIK8hodEgkF7QNWQ3ZAwobzGQ&s" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis provident
+                    suscipit temporibus modi voluptatem. Assumenda aspernatur ad nihil quasi expedita eligendi atque?
+                    Dolorum eum deserunt dicta iste beatae commodi, doloribus expedita hic recusandae, tempora illum
+                    consequuntur? Necessitatibus voluptate animi repellendus reiciendis!</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹150/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">₹500/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Free</th>
+                          <th>Pro</th>
+                          <th>Enterprise</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Public</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Permissions</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Sharing</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            Copyright &copy; Mr.shayar_gym.com | All rights reserved
+        </footer>
+
+    </div>
+</body>
+
+</html>
