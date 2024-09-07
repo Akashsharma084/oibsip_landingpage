@@ -137,3 +137,7 @@ footer{
     font-weight: bolder;
     margin: 12px 0;
 }
+.me{
+    border-radius: 50;
+    border: 25px;
+}
